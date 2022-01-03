@@ -1,0 +1,31 @@
+package main
+
+// This package is what defines if an entry point of a package
+
+import (
+	"fmt"
+	"os"
+)
+
+// This is an import Function when you're dealing with other
+// Packages
+
+//This is the entry function where the compiler starts
+func main() {
+
+	//this is the function from a fmt package
+	// where you state the name of the package
+	// and the function you want to use
+
+	fmt.Printf("this is Golang Tutorial")
+	fmt.Println("this is Golanf Tutorial 2")
+	fmt.Fprint(os.Stderr, "this is a Golang Tutorial")
+
+	HellWorld()
+}
+
+//creating a fuction starts with func keyword
+
+func HellWorld() {
+	fmt.Println("hello world !!!")
+}
